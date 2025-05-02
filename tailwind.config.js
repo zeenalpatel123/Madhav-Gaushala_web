@@ -55,7 +55,9 @@ module.exports = {
         'l1' : '#F7F4EF',
       },
       fontFamily: {
-        'anek' : ['Anek Devanagari','sans-serif']
+        'anek' : ['Anek Devanagari','sans-serif'],
+        'noto_sans' : ['Noto Sans Devanagari','sans-serif']
+
       }
     },
   },
