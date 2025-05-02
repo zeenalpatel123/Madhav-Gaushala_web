@@ -13,7 +13,7 @@
         <div class="warrper relative z-20">
             <div class="flex items-center justify-between">
                 <a href="">
-                    <img src="assets/images/logo.webp" class="mx-auto max-w-44 xl:max-w-full" alt="logo"/>
+                    <img src="assets/images/logo.webp" class="mx-auto max-w-32 xs:max-w-36 md:max-w-44 xl:max-w-full" alt="logo"/>
                 </a>
                 <ul class="hidden lg:flex items-center space-x-8 lg:space-x-10 xl:space-x-12 2xl:space-x-16">
                     <li>
@@ -35,34 +35,67 @@
                         <a href="" class="text18 text-black font-semibold inline-block">स्वयंसेवक बने</a>
                     </li>
                 </ul>
-                <div class="w-full max-w-28 xl:max-w-32 2xl:max-w-[186px]">
-                    <button class="btn_primary w-full max-w-24 xl:max-w-32 2xl:max-w-[186px] bg-orange hover:bg-transparent hover:text-black hover:border-orange anim"><span>संपर्क करें</span></button>
-                    
+                <div class="flex items-center space-x-4">
+                    <div class="w-full max-w-28 xl:max-w-32 2xl:max-w-[186px]">
+                        <button class="btn_primary w-full max-w-24 xl:max-w-32 2xl:max-w-[186px] bg-orange hover:bg-transparent hover:text-black hover:border-orange anim"><span>संपर्क करें</span></button>
+                    </div>
+                    <span class="icon-menu1 text-[24px] text-orange block lg:hidden" onclick="toggleActive('#open','-translate-x-full');"></span>
                 </div>
             </div>
         </div>
-        <!-- <img src="assets/images/header_img.webp" class="absolute w-full h-full object-cover inset-x-0 top-0 z-10" alt="header_img"/> -->
     </header>
-    <section class="pt-12 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-32 2xl:pt-36 pb-10 sm:pb-12 md:pb-14 lg:pb-16 xl:pb-20 2xl:pb-28 bg-d_green relative">
-        <div class="warrper">
-            <div class="flex items-center -mx-3.5">
-                <div class="w-7/12 p-3.5">
-                    <span class="inline-block text-14 lg:text-16 xl:text-18 text-c1 font-normal border-2 border-c1 rounded-full py-1.5 lg:py-2 px-2.5 xl:px-4">मिलकर बदलें गौमाता का संसार</span>
-                    <h1 class="mt-14">गौ सेवा में जुड़कर, बनें समाज का अभिन्न हिस्सा</h1>
-                    <p class="text-14 lg:text-16 xl:text-18 text-white font-normal mt-2.5 xl:mt-4 mb-6 lg:mb-8 xl:mb-10 2xl:mb-12">आपके सहयोग से गौ माता को मिलेगा एक सुरक्षित और सुखद जीवन।</p>
-                    <button class="btn_primary bg-orange hover:bg-transparent hover:text-white hover:border-orange anim w-full max-w-[200px]"> दान कीजिए</button>
-                    <div class="flex items-center space-x-10 mt-8 md:mt-10 lg:mt-12 xl:mt-14">
-                        <img src="assets/images/logo1.webp" class="" alt=""/>
-                        <img src="assets/images/logo2.webp" class="" alt=""/>
-                        <img src="assets/images/logo3.webp" class="" alt=""/>
+    <div class="w-full h-screen bg-black/30 backdrop-blur-sm block lg:hidden anim fixed left-0 -translate-x-full inset-y-0 z-50" id="open">
+        <div class="w-full max-w-96 h-screen bg-[#ffefb1] pb-5 relative border-r border-primary">
+            <div class="p-6 bg-dark flex items-center justify-between border-b border-primary">
+                <a href="#">
+                    <img src="assets/images/logo.webp" class="max-w-40 xs:max-w-44" alt="logo"/>
+                </a>
+                <span class="icon-close text-primary text-[20px]" onclick="toggleActive('#open','-translate-x-full');">
+                </span>
+            </div>
+            <ul class="space-y-3.5 p-5 pt-10 text-22 inline-block text-d_green font-bold w-full h-[calc(100%-90px)] overflow-y-auto">
+                <li>
+                    <a href="#" class=" hover:text-primary anim">होम</a>
+                </li>
+                <li>
+                    <a href="#" class=" hover:text-primary anim">हमारे बारे में</a>
+                </li>
+                <li>
+                    <a href="#" class=" hover:text-primary anim">समाचार</a>
+                </li>
+                <li>
+                    <a href="#" class=" hover:text-primary anim">गैलरी</a>
+                </li>
+                <li>
+                    <a href="#" class=" hover:text-primary anim">दान कीजिए</a>
+                </li>
+                <li>
+                    <a href="#" class=" hover:text-primary anim">स्वयंसेवक बने</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class=" bg-d_green relative">
+        <!-- <div class="warrper"> -->
+            <div class="flex flex-wrap">
+                <div class="sm:order-2 w-full h-80 overflow-hidden sm:h-auto sm:w-1/2 xl:w-5/12">
+                    <img src="assets/images/hro_img.png" class=" w-full h-full object-right scale-150 sm:scale-100 sm:object-left object-cover" alt="hro_img"/>
+                </div>
+                <div class="sm:order-1 w-full sm:w-1/2 xl:w-7/12 p-3.5">
+                    <div class="max-w-[820px] ml-auto py-7 md:py-0">
+                        <span class="inline-block text-14 lg:text-16 xl:text-18 text-c1 font-normal border-2 border-c1 rounded-full py-1.5 lg:py-2 px-2.5 xl:px-4">मिलकर बदलें गौमाता का संसार</span>
+                        <h1 class="mt-4 md:mt-6 xl:mt-10 2xl:mt-14">गौ सेवा में जुड़कर, बनें समाज का अभिन्न हिस्सा</h1>
+                        <p class="text-14 lg:text-16 xl:text-18 text-white font-normal md:mt-2.5 xl:mt-4 mb-2.5 md:mb-4 lg:mb-8 xl:mb-10 2xl:mb-12">आपके सहयोग से गौ माता को मिलेगा एक सुरक्षित और सुखद जीवन।</p>
+                        <button class="btn_primary bg-orange hover:bg-transparent hover:text-white hover:border-orange anim md:w-full md:max-w-[200px]"> दान कीजिए</button>
+                        <div class="flex flex-wrap items-center space-x-3.5 xl:space-x-5 2xl:space-x-10 mt-4 md:mt-6 xl:mt-10 2xl:mt-14">
+                            <img src="assets/images/logo1.webp" class="w-full max-w-10 md:max-w-14 xl:max-w-20" alt=""/>
+                            <img src="assets/images/logo2.webp" class="w-full max-w-10 md:max-w-14 xl:max-w-20" alt=""/>
+                            <img src="assets/images/logo3.webp" class="w-full max-w-10 md:max-w-14 xl:max-w-20" alt=""/>
+                        </div>
                     </div>
                 </div>
-                <div class="w-5/12 p-3.5">
-                    <img src="assets/images/gow.webp" class="absolute h-full right-0 inset-y-0 object-cover" alt="gow"/>
-                    <img src="assets/images/hero_side.webp" class="absolute h-full -inset-y-4 " alt="">
-                </div>
             </div>
-        </div>
+        <!-- </div> -->
     </section>
     <section class="py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20">
         <div class="warrper max-w-[1198px]">
@@ -369,36 +402,43 @@
             </div>
         </div>
     </section>
+<!-- popup design  -->
+    <div class="fixed w-full h-screen inset-0 bg-black/30 backdrop-blur-sm py-10 px-10 z-50 flex overflow-y-auto hidden">
+        <div class="w-full max-w-xl rounded-xl bg-l1 p-3.5 md:p-6 lg:p-8 xl:p-10 2xl:p-12 m-auto">
+            <h3 class="mb-2 font-bold text-black">दानकर्ता विवरण फ़ॉर्म</h3>
+            <div class="p-2.5">
+                <label class="label">पूरा नाम</label>
+                <input type="text" class="input" placeholder="दानकर्ता का नाम"/>
+            </div>
+            <div class="p-2.5">
+                <label class="label">मोबाइल नंबर</label>
+                <input type="text" class="input" placeholder="00000 00000"/>
+            </div>
+            <div class="p-2.5">
+                <label class="label">ईमेल आईडी</label>
+                <input type="text" class="input" placeholder="दानकर्ता का नाम"/>
+            </div>
+            <div class="p-2.5">
+                <label class="label">एड्रेस</label>
+                <input type="text" class="input" placeholder="यहाँ लिखे"/>
+            </div>
+            <div class="p-2.5">
+                <label class="label">पिनकोड</label>
+                <input type="text" class="input" placeholder="यहाँ लिखे"/>
+            </div>
+            <div class="p-2.5">
+                <label class="label">पान कार्ड नंबर</label>
+                <input type="text" class="input" placeholder="यहाँ लिखे"/>
+            </div>
+            <div class="mt-2 lg:mt-3">
+                <button class="btn_primary bg-orange hover:bg-transparent hover:text-black hover:border-orange anim w-full max-w-40">जमा करे</button>
+            </div>
+        </div>
+    </div>
+<!-- popup design  -->
+
 </body>
 
 <script src="assets/js/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop:true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 7.5,
-          spaceBetween: 30,
-        },
-      },
-    });
-</script>
+<script src="assets/js/script.js"></script>
 </html> 

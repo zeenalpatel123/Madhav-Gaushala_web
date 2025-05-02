@@ -58,4 +58,10 @@
   .icon-menu:before {
     content: "\e90b";
   }
+  .icon-menu1:before {
+    content: "\e929";
+  }
+  .icon-close:before {
+    content: "\e90d";
+  }
   
